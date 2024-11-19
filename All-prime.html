@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+		<script>
+			let startNum=20;
+			let endNum=50;
+			
+			for(let i=startNum;i<=endNum;i++){
+				if (i>1){
+					isPrime=true;
+					for(let j=2;j<i;j++){
+				if(i%j==0){
+					isPrime=false
+				break;
+						}	
+					}
+					if(isPrime==true){
+					document.writeln(i);
+					
+					}
+				}
+			}
+		</script>
+</body>
+</html>
