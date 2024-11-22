@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+		<script>
+			var number= prompt("Enter a Number");
+			var temp = number;
+			var noofDigits=number.toString().length;
+			var sum= 0;
+			while(temp>0){
+			var digit=temp%10;
+				sum +=digit**noofDigits;
+				temp=parseInt(temp/10);
+			}
+			if (sum==number){
+			document.write(`${number} is an armstrong Number`);
+			}else{
+			document.write(`${number} is not an armstrong Number`);
+			}
+			
+			
+		</script>
+</body>
+</html>
