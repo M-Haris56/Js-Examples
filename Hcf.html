@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		let  a=prompt("Enter a First No");
+		let b=prompt("Enter a First No");
+
+		
+		let smaller = a < b ? a : b;
+		let gcd = 1; 
+
+		for (let i = smaller; i >= 1; i--) {
+			if (a % i === 0 && b % i === 0) {
+				gcd = i; 
+				break;
+			}
+		}
+
+		document.write("The GCD of " + a + " and " + b + " is: " + gcd);
+	</script>
+</body>
+</html>
